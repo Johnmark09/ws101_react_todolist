@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #697565 ,#1c1924);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #140303;
+  margin-bottom: 0.5rem;
+  font-size: 1.80rem;
+  font-style: "Poppins";
+  transition: transform 0.5s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.5);
+  
+}
+
+.TodoWrapper {
+  background: rgba(255, 255, 255, 0.678);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 10px 5px 10px 10px black;
+  border: 5px double #697565;
+  margin: 0%;
+  width: 100%;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  height: 7.5vh;
+  outline: none;
+  background: none;
+  border: 2px solid #140303;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 350px;
+  color: #140303;
+  border-radius: 10px 0px 0px 10px;
+  height: 3rem;
+}
+
+.todo-input::placeholder {
+  color: #697565;
+}
+
+.todo-btn {
+  height: 7.5vh;
+  background: #1c1924;
+  color: #fff;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+  transition: background-color 0.3s, transform 0.2s; 
+  border: solid 2px #140303;
+  height: 3rem;
+  margin-left: 5px;
+}
+
+.todo-btn:hover {
+  background-color: #697565;
+}
+
+.todo-btn:active {
+  transform: scale(0.95); 
+  background-color: #5a5e5a; 
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #697565;
+  color: #140303;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.Todo:hover {
+  background-color: #1c1924;
+  transform: scale(1.15);
+}
+
+
+.Todo:active {
+  transform: scale(1.05); 
+  background-color: #1a1d1a; 
+}
+
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #697565;
+  text-decoration: line-through;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #fff; 
+}
+
+
+.edit-icon:active,
+.delete-icon:active {
+  transform: scale(0.9);
+  color: #140303; 
+}
